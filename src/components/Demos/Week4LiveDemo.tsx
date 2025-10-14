@@ -1,4 +1,6 @@
 import React from "react";
+import NameInput from "../NameInput";
+import DataAnalyzer from "../DataAnalyzer";
 
 // map example
 const numbers = [1, 2, 3, 4, 5];
@@ -34,6 +36,12 @@ const Week4LiveDemo = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
       <h1 className="text-4xl font-bold mb-4">Week 4 Live Demo</h1>
+      <div className="mb-6 p-4 bg-white rounded shadow w-full max-w-xl">
+        <NameInput />
+      </div>
+      <div className = "w-full max-w-2xl mb-6">
+        <DataAnalyzer />
+      </div>
       <div className="mb-6 p-4 bg-white rounded shadow w-full max-w-xl">
         <h2 className="text-2xl font-semibold mb-2">.map() Example</h2>
         <p className="mb-1">Original numbers: {numbers.join(", ")}</p>
